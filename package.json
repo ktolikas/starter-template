@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node-sass -w scss/test.scss --output-style compressed .|postcss css/test.css -u autoprefixer -r",
-    "c":"node-sass sass/test.sass -o .|postcss test.css -u autoprefixer -r",
-    "w":"watch 'npm run c' sass"
+    "start": "nodemon --exec node-sass scss/custom.scss -o css --output-style compressed && postcss css/custom.css --use autoprefixer -d css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
