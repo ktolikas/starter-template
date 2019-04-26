@@ -5,7 +5,7 @@ Starter template for small and medium sized projects
 ## Feautures
 
 - SCSS -> CSS -> Prefixed -> Minified
-- jQuery included
+- jQuery enabled by default
 - CSS Bootstrap setup, where you can add only needed parts (grid + reboot by default). To customize this go to `scss/_custom_bootstrap.scss`
 - JS Bootstrap is added to `index.html` but commented out
 
@@ -33,3 +33,5 @@ To stop watching
 ```
 ctrl + c
 ```
+
+Enjoy hacking :)
