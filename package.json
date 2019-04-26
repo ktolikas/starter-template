@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec node-sass scss/master.scss -o css --output-style compressed && postcss css/master.css --use autoprefixer -d css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass scss/master.scss -o css --output-style compressed && postcss css/master.css --use autoprefixer -b \"last 2 versions\" -d css/",
+    "start": "nodemon --watch scss/ --exec \"npm run build\" -e scss"
   },
   "author": "",
   "license": "ISC"
