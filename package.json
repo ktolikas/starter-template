@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/master.scss -o css --output-style compressed && postcss css/master.css --use autoprefixer -b \"last 2 versions\" -d css/",
+    "build": "node-sass scss/master.scss -o css --output-style compressed --source-map-embed true && postcss css/master.css --use autoprefixer -b \"last 2 versions\" -d css/",
     "start": "nodemon --watch scss/ --exec \"npm run build\" -e scss"
   },
   "author": "",
