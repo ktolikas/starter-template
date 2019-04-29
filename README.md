@@ -14,17 +14,19 @@ Starter template for small and medium sized projects
 - node + npm ([install](https://nodejs.org/en/download/))
 - nodemon (npm i -g nodemon)
 - node-sass (npm i -g node-sass)
-- postcss
-  - postcss (npm i -g postcss)
-  - postcss-cli (npm i -g postcss-cli)
-  - autoprefixer (npm i -g autoprefixer)
 
 ## Usage
+
+Initial installation
+
+```
+cd 'path/to/this/project/'
+npm install
+```
 
 To start watching
 
 ```
-cd 'path/to/this/project/'
 npm start
 ```
 

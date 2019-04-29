@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/master.scss -o css --output-style compressed --source-map-embed true && postcss css/master.css --use autoprefixer -b \"last 2 versions\" -d css/",
+    "build": "node-sass scss/master.scss -o css && postcss css/master.css -m -d css",
     "start": "nodemon --watch scss/ --exec \"npm run build\" -e scss"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss": "^7.0.14",
+    "cssnano": "^4.1.10"
+  }
 }
