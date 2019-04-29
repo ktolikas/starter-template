@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/master.scss -o css && postcss css/master.css -m -d css",
+    "build": "node-sass scss/master.scss -o css source-map-embed && postcss css/master.css -d css",
     "start": "nodemon --watch scss/ --exec \"npm run build\" -e scss"
   },
   "author": "",
