@@ -1,2 +1,12 @@
 /*test*/
 @import './_custom_bootstrap.scss';
+
+::placeholder {
+  color: gray;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  grid-template-rows: 100px 10px 100px;
+  background: red;
+}
