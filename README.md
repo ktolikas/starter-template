@@ -18,6 +18,7 @@ Starter template for small and medium sized projects
 ## Usage
 
 Initial installation
+(this should be done only once per project)
 
 ```
 cd 'path/to/this/project/'
@@ -25,6 +26,7 @@ npm install
 ```
 
 To start watching
+(this should be done every time you start developing)
 
 ```
 npm start
